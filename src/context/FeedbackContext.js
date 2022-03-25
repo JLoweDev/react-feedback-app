@@ -9,6 +9,11 @@ export const FeedbackProvider = ({children}) => {
             id: 1,
             text: 'This item is from context',
             rating: 10,
+        },
+        {
+            id: 2,
+            text: 'This is a second comment from context',
+            rating: 3,
         }
     ])
     const [feedbackEdit, setFeedbackEdit] = useState({
@@ -42,6 +47,7 @@ export const FeedbackProvider = ({children}) => {
         deleteFeedback,
         addFeedback,
         editFeedback,
+        feedbackEdit,
     }}>
         {children}
     </FeedbackContext.Provider>
